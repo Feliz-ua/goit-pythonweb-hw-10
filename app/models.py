@@ -61,4 +61,3 @@ class Contact(Base):
         index=True,
     )
     owner: Mapped[User] = relationship(back_populates="contacts")
-    
