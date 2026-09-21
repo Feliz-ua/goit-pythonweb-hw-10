@@ -13,6 +13,7 @@ import app.models
 
 from app.limiter import limiter
 
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="Contacts API",
